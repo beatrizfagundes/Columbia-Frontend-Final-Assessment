@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box; }
+
+.homeworks {
+  width: 60%;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid black;
+  font-family: Georgia;
+  padding: 50px;
+  box-shadow: 3px 4px 5px 1px #6b6b6b; }
+  .homeworks .homework {
+    cursor: pointer; }
+
+.homework-info {
+  margin-top: 50px; }
+  .homework-info.complete {
+    color: green; }
+  .homework-info.incomplete {
+    color: red; }
+
+a.url:link {color:#00008B;}
+a.url:visited {color:#0000ff;}
+a.url:hover {font-size:110%;}

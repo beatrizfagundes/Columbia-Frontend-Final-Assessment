@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Columbia Frontend Final Assessment</title>
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-app="FinalExam">
+
+        <div ng-controller="MainController">
+
+            <div ng-repeat="homework in homeworks" class="homeworks">
+                <ul>
+                    <li ng-click="showAssignmentInfo(homework)" class="homework">{{ homework.assignment }}</li>
+                    <div class="homework-info" ng-show="homework.clicked" ng-class="homework.completed ? 'complete' : 'incomplete'">
+                        <ul>
+                            <li><a class="url" href={{homework.url}} target="_blank">{{ homework.url }}</a></li> 
+                            <li>{{ homework.status }}</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+
+    </body>
+</html>
