@@ -22,7 +22,7 @@ app.factory('Homework', function ($http) {
                     {
                         assignment: 'Test First JavaScript',
                         url: 'https://github.com/beatrizfagundes/FullstackTestFirst',
-                        status: 'completed'
+                        status: 'incompleted'
                     },
                     {
                         assignment: 'Angular Flash Cards - Day 1',

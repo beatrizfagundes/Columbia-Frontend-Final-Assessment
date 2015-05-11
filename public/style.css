@@ -23,3 +23,9 @@
 a.url:link {color:#00008B;}
 a.url:visited {color:#0000ff;}
 a.url:hover {font-size:110%;}
+
+#menu {
+  padding: 20px;
+  float: rigth;
+  margin: 0 auto; 
+  font-weight: bold; }

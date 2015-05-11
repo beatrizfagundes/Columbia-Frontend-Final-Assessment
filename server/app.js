@@ -25,3 +25,10 @@ app.use(express.static(publicPath));
 app.get('/', function (req, res) {
     res.sendFile(indexHtmlPath);
 });
+
+// The path of about.html file. ([ROOT]/about.html)
+var aboutHtmlPath = path.join(__dirname, '../about.html');
+// route /about => serve up about.html file
+app.get('/about', function (req, res) {
+    res.sendFile(aboutHtmlPath);
+});
